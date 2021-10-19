@@ -2,19 +2,19 @@
 
 A simple smart contract to log folks saying gm to each other. Deployed to test networks - rinkeby & mumbai.
 
-Try running some of the following tasks:
+The run scripts deployes the smart contract locally, whereas the deploy script deployed to smart contract to a network of choice.
 
 ```shell
 npm ci
 
 npx hardhat run scripts/run.js
-npx hardhat run scripts/run.js --network rinkeby
-npx hardhat run scripts/run.js --network mumbai
+npx hardhat run scripts/deploy.js --network rinkeby
+npx hardhat run scripts/deploy.js --network mumbai
 ```
 
 npm ci - installs all the package dependencies. Post this, you'd have to register at alchemy.com to get a rinkeby & mumbai API key.
 
-Once, you get the API keys, create a ```shell .env``` file inside the backend folder with the following 3 lines in it. The private key is your private key of your wallet.
+Once, you get the API keys, create a ```.env``` file inside the backend folder with the following 3 lines in it. The private key is your private key of your wallet.
 
 ```shell
 POLYGON_STAGING_ALCHEMY_KEY = 
